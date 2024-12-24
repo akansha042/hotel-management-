@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food-services</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .img-container img{
+            width: 1535px;
+            height: 730px;
+            background-repeat: no-repeat;
+        }
+        .header{
+            position: absolute;
+            top: 0;
+            padding: 0;
+            margin: 0;
+            background-color: black;
+            width: 1536px;
+            height: 100px;
+            opacity: 0.5;
+        }
+        .header .menu li a{
+            color: aliceblue;
+            font-size: 20px;
+            display: inline;
+            float: left;
+            margin-left: 30px;
+            list-style: none;
+            text-decoration: none;
+            padding: 20px;
+        }
+        .text-container h1{
+            color: rgb(45, 63, 79);
+            position: absolute;
+            top: 70px;
+            left: 60px;
+            font-size: 80px;
+        }
+        .outer .box{
+            background-color: white;
+            border: 2px solid black;
+            position: absolute;
+            top: 400px;
+            left: 20px;
+        }
+        .outer .box img{
+            padding: 5px;
+            width: 220px;
+            height: 200px;
+            transition: transform 0.7s ease, box-shadow 0.7s ease;
+        }
+
+        .outer .box .breakfast{
+            padding: 10px;
+            border-radius: 4px;
+            position: absolute;
+            left: 25px;
+            top: 220px;
+            width: 200px;
+            color: rgb(0, 0, 0);
+            font-family:sans-serif;
+            background-color: rgb(255, 255, 255);
+        }
+        .outer .box .breakfast:hover{
+            background-color: rgba(9, 25, 36, 0.53);
+        }
+        .outer .box img:hover{
+           transform: scale(1.1); 
+            box-shadow: 0 0 10px rgba(26, 34, 81, 0.5); 
+        }
+        /* second */
+        .outer1 .box1{
+            background-color: white;
+            border: 2px solid black;
+            position: absolute;
+            top: 400px;
+            left: 290px;
+        }
+        .outer1 .box1 img{
+            padding: 5px;
+            width: 220px;
+            height: 200px;
+            transition: transform 0.7s ease, box-shadow 0.7s ease;
+        }
+        .outer1 .box1 img:hover{
+           transform: scale(1.1); 
+            box-shadow: 0 0 10px rgba(26, 34, 81, 0.5); 
+        }
+        .outer1 .box1 .lunch{
+            padding: 10px;
+            border-radius: 4px;
+            position: absolute;
+            left: 25px;
+            top: 220px;
+            width: 200px;
+            color: rgb(0, 0, 0);
+            font-family:sans-serif;
+            background-color: rgb(255, 255, 255);
+        }
+        .outer1 .box1 .lunch:hover{
+            background-color: rgba(9, 25, 36, 0.53);
+        }
+        /* third */
+        .outer2 .box2{
+            background-color: white;
+            border: 2px solid black;
+            position: absolute;
+            top: 400px;
+            left: 560px;
+        }
+        .outer2 .box2 img{
+            padding: 5px;
+            width: 220px;
+            height: 200px;
+            transition: transform 0.7s ease, box-shadow 0.7s ease;
+        }
+        .outer2 .box2 img:hover{
+           transform: scale(1.1); 
+            box-shadow: 0 0 10px rgba(26, 34, 81, 0.5); 
+        }
+        .outer2 .box2 .dinner{
+            padding: 10px;
+            border-radius: 4px;
+            position: absolute;
+            left: 25px;
+            top: 220px;
+            width: 200px;
+            color: rgb(0, 0, 0);
+            font-family:sans-serif;
+            background-color: rgb(255, 255, 255);
+        }
+        .outer2 .box2 .dinner:hover{
+            background-color: rgba(9, 25, 36, 0.53);
+        }
+        /* fourth */
+        .outer3 .box3{
+            background-color: white;
+            border: 2px solid black;
+            position: absolute;
+            top: 400px;
+            left: 840px;
+        }
+        .outer3 .box3 img{
+            padding: 5px;
+            width: 220px;
+            height: 200px;
+            transition: transform 0.7s ease, box-shadow 0.7s ease;
+        }
+        .outer3 .box3 img:hover{
+           transform: scale(1.1); 
+            box-shadow: 0 0 10px rgba(26, 34, 81, 0.5); 
+        }
+        .outer3 .box3 .beverages{
+            padding: 10px;
+            border-radius: 4px;
+            position: absolute;
+            left: 25px;
+            top: 220px;
+            width: 200px;
+            color: rgb(0, 0, 0);
+            font-family:sans-serif;
+            background-color: rgb(255, 255, 255);
+        }
+        .outer .box .breakfast:hover{
+            background-color: rgba(9, 25, 36, 0.53);
+        }
+        .breakfastPage .bimg{
+            width: 1536px;
+            height: 718px;
+            background-repeat: no-repeat;
+            padding: 0%;
+            margin: 0%;
+        }
+        .b-heading{
+            position: absolute;
+            top: 760px;
+            font-size: 45px;
+            color: rgb(68, 13, 13);
+            left: 200px;
+        }
+        .b-heading span{
+            color: rgb(111, 76, 50);
+        }
+        .menu-b{
+            position: absolute;
+            top: 900px;
+            left: 280px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .lunchPage .limg{
+            margin: 0;
+            padding: 0;
+            width: 1536px;
+            height: 718px;
+            background-repeat: no-repeat;
+            opacity: 0.5;
+        }
+        .lunchPage .l-heading{
+            font-size: 50px;
+            position: absolute;
+            top: 1500px;
+            left: 300px;
+        }
+        .lunchPage .l-heading span{
+            color: rgb(7, 69, 80);
+        }
+        .lunchPage .menu-l{
+            font-size: 30px;
+            position: absolute;
+            top: 1750px;
+            left: 300px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .lunchPage .menu-lr{
+            font-size: 30px;
+            position: absolute;
+            top: 1750px;
+            left: 750px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .lunchPage .menu-lb{
+            font-size: 30px;
+            position: absolute;
+            top: 1750px;
+            left: 1100px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .DinnerPage .dimg{
+            margin: 0;
+            padding: 0;
+            width: 1536px;
+            height: 718px;
+            background-repeat: no-repeat;
+            opacity: 0.7;
+        }
+        .d-heading{
+            font-size: 50px;
+            position: absolute;
+            top: 2200px;
+            left: 100px;
+            color: rgb(0, 0, 0);
+        }
+       .head-l {
+        list-style: none;
+        text-decoration: none;
+        position: absolute;
+        top: 1670px;
+        left: 15%;
+       }
+       .head-l li h1{
+        display: inline-block;
+        margin-right: 100px;      
+     }
+     .head-d {
+        list-style: none;
+        text-decoration: none;
+        position: absolute;
+        top: 2380px;
+        left: 15%;
+       }
+       .head-d li h1{
+        display: inline-block;
+        margin-right: 100px;      
+     }
+     .DinnerPage .menu-dv{
+            font-size: 30px;
+            position: absolute;
+            top: 2450px;
+            left: 300px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .DinnerPage .menu-dr{
+            font-size: 30px;
+            position: absolute;
+            top: 2450px;
+            left: 750px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .DinnerPage .menu-db{
+            font-size: 30px;
+            position: absolute;
+            top: 2450px;
+            left: 1100px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .beverages .b-img{
+            margin: 0;
+            padding: 0;
+            width: 1536px;
+            height: 718px;
+            background-repeat: no-repeat;
+            opacity: 0.7;
+        }
+        .beverages .heading-bv{
+            font-size: 50px;
+            position: absolute;
+            top: 2900px;
+            left: 100px;
+            color: rgb(255, 255, 255);
+        }
+        .head-bv {
+        list-style: none;
+        text-decoration: none;
+        position: absolute;
+        top: 3000px;
+        left: 15%;
+       }
+       .head-bv li h1{
+        display: inline-block;
+        margin-right: 100px;      
+     }
+     .beverages .menu-bv{
+            font-size: 30px;
+            position: absolute;
+            top: 3150px;
+            left: 300px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+        }
+        .beverages .menu-bvr{
+            font-size: 30px;
+            position: absolute;
+            top: 3150px;
+            left: 650px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+        }
+        .beverages .menu-bvd{
+            font-size: 30px;
+            position: absolute;
+            top: 3150px;
+            left: 1100px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+        <div class="header">
+            <ul class="menu">
+                <li>
+                    <a href="index.html">HOME</a>
+                    <a href="#breakfastPage">BREAKFAST</a>
+                    <a href="#lunchPage">LUNCH</a>
+                    <a href="#DinnerPage">DINNER</a>
+                    <a href="#beverages">BEVERAGES</a>
+                </li>
+            </ul>
+        </div>
+        <div class="img-container">
+            <img src="food.webp">
+        </div>
+        <div class="text-container">
+            <h1>A genuine fine dining <br>experience awaits youuu!</h1>
+        </div>
+        <div class="outer">
+            <div class="box">
+                <img src="breakfast.jpeg">
+                <button class="breakfast" onclick="breakfast()">BREAKFAST</button>
+            </div>
+        </div>
+        <div class="outer1">
+            <div class="box1">
+                <img src="lunch.jpeg">
+                <button class="lunch" onclick="Lunch()">LUNCH</button>
+            </div>
+        </div>
+        <div class="outer2">
+            <div class="box2">
+                <img src="dinner.jpg">
+                <button class="dinner" onclick="Dinner()">DINNER</button>
+            </div>
+        </div>
+        <div class="outer3">
+            <div class="box3">
+                <img src="beverages.jpg">
+                <button class="beverages" onclick="Beverages()">BEVERAGES</button>
+            </div>
+        </div>
+        <!-- all pages starts here  -->
+        <div class="breakfastPage" id="breakfastPage">
+            <img class="bimg" src="breakmenu.jpeg">
+            <h1 class="b-heading">Start Your Day Right: Explore Our<br><span>Breakfast Delights!</span></h1>
+            <p class="menu-b">Idli<br>Sambhar Idli<br>Poha<br>Simple Dosa<br>Masala Dosa<br>Sambar Dosa<br>Paratha<br>Vadapav<br>Rava/Upama<br>
+            Sandwich<br>Tea<br>Coffee<br>Hot Milk</p>
+        </div>
+        <!--Lunch-->
+        <div class="lunchPage" id="lunchPage">
+            <ul class="head-l">
+                <li>
+                    <h1>VEGETABLES-ITEMS</h1>
+                    <h1>ROTI & PARATHA</h1>
+                    <h1>RICE & BIRYANI</h1>
+                </li>
+            </ul>
+            <img class="limg" src="lunchb.jpg">
+            <h1 class="l-heading">Today's Temptations:<br><span> A Culinary Journey Through Our Lunch Menu?</span></h1>
+           
+            <p class="menu-l">
+                Aloo Gobi<br>Baigan Masala<br>Bombay Aloo<br>Chana Masala<br>Daal Makhani<br>
+                Matar Paneer<br>Mixed veg<br>Palak Paneer<br>
+            </p>
+            
+            <p class="menu-lr">Paneer paratha<br>Aloo Paratha<br>Butter Paratha<br>Palak Paratha<br>Plain Roti<br>Butter Roti<br>
+            </p>
+
+           
+            <p class="menu-lb">Plain Rice<br>Jeera Rice<br>Veg Pulao<br>Veg Biryani<br>Lemon Rice<br>Curd Rice<br></p>
+        </div>
+        <!--Dinner-->
+        <div class="DinnerPage" id="DinnerPage">
+            <img class="dimg" src="dimg.jpg">
+
+            <h1 class="d-heading">Indulge in Evening Elegance:<br> Unveiling Our Exquisite Dinner Delights</h1>
+            <ul class="head-d">
+                <li>
+                    <h1>VEGETABLES-ITEMS</h1>
+                    <h1>ROTI & PARATHA</h1>
+                    <h1>RICE & BIRYANI</h1>
+                </li>
+            </ul>
+            <p class="menu-dv">
+                Aloo Gobi<br>Baigan Masala<br>Bombay Aloo<br>Chana Masala<br>Daal Makhani<br>
+                Matar Paneer<br>Mixed veg<br>Palak Paneer<br>
+            </p>
+           
+            <p class="menu-dr">Paneer paratha<br>Aloo Paratha<br>Butter Paratha<br>Palak Paratha<br>Plain Roti<br>Butter Roti<br>
+            </p>
+
+          
+            <p class="menu-db">Plain Rice<br>Jeera Rice<br>Veg Pulao<br>Veg Biryani<br>Lemon Rice<br>Curd Rice<br></p>
+        </div>
+        <!--Beverages-->
+        <div class="beverages" id="beverages">
+            <img class="b-img" src="beve.jpeg">
+            <h1 class="heading-bv">Sip & Savor: Refreshing Elixirs Await in Our Beverage Oasis</h1>
+            <ul class="head-bv">
+                <li>
+                    <h1>HOT BEVERAGES</h1>
+                    <h1>COLD BEVERAGES</h1>
+                    <h1>FRUIT JUICES</h1>
+                </li>
+            </ul>
+            <p class="menu-bv">
+                Plain Tea<br>Special Tea<br>Hot Coffee<br>Capaccino<br>Hot Milk<br>Hot Chocolate<br>Caffe Mocha<br>Caffee Latte<br>
+            </p>
+           
+            <p class="menu-bvr">Cold Coffee<br>Cold Coffee with Crush<br>Smoothy<br>Iced Milk<br>Iced Coffee<br>Lemon Iced Tea<br>
+            </p>
+
+          
+            <p class="menu-bvd">Lime<br>Watermelon<br>Mango<br>Chickoo<br>Mixed Fruits<br>Orange<br>Papaya</p>
+        </div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .img-container img{
+        margin: 0;
+        padding: 0;
+        width: 1536px;
+        height: 726px;
+       
+    }
+    nav{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 0;
+        background-color: rgb(29, 45, 72);
+        opacity: 0.7;
+        top: 0;
+        width: 1536px;
+    }
+   .content h1{
+        color:white;
+        font-size: 50px;
+        font-weight: bold;
+        position: absolute;
+        left: 20px;
+    }
+    .content h1 span{
+        color: rgb(107, 18, 85);
+        font-size: 55px;
+    }
+    .form {
+    position: absolute;
+    top:120px ;
+    left: 50px;
+    border-radius: 3%;
+    margin: 10px;
+    padding: 30px;
+    width: 480px;
+    border: 2px solid #ffffff;
+}
+.form label{
+    
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: #000000;
+  }
+  .txt-container{
+    margin: 10px;
+    padding: 2px;
+    background-color: #ffffff;
+    opacity: 0.7;
+    width: 550px;
+    height: 450px;
+    position: absolute;
+    top: 180px;
+    border-radius: 5%;
+    right: 100px;
+    
+  }
+  .txt-container:hover{
+    box-shadow: 0 0 40px rgba(123, 191, 201, 0.855);
+  }
+  .text p{
+    text-align: center;
+    font-size: 30px;
+  }
+  .text p span{
+    color: #682f19;
+    font-weight: bold;
+  }
+  input[type=submit]{
+    border-radius: 4px;
+    font-size: 18px;
+    border: 2px solid black;
+    background-color: #ffffff;
+    width: 120px;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+  }
+  input[type=submit]:hover{
+    background-color: #737d20;
+
+  }
+</style>
+<body>
+    <div class="img-container">
+        <img class="bgimg" src="complaint.jpg">
+    </div>
+    <nav>
+        <div class="content">
+            <h1>Share Your Concerns,<span> We're Here to Listen</span></h1>
+        </div>
+    </nav>
+    <div class="form">
+        <form action="complaint.php" method="POST">
+            <label for="Name">Name :</label>
+            <input type="text" id="name" name="name"  required>
+            <br><br>
+            <label for="email">Email :</label>
+            <input type="text" id="email" name="email"  required>
+            <br><br>
+            <label for="contact">Contact :</label>
+            <input type="text" id="contact" name="contact"  required>
+            <br><br>
+            <label for="commsg">Complaint Message :</label><br><br>
+            <textarea id="commsg" name="commsg" rows="5" required></textarea>
+            <br>
+            <input type="submit" value="SUBMIT">
+        </form>
+    </div>
+    <div class="txt-container">
+        <div class="text">
+            <p>
+                We prioritize the comfort and safety of our residents, 
+                and we strive to maintain a conducive living environment for everyone. Your 
+                feedback helps us identify areas for improvement, and we thank you for bringing your
+                 concerns to our attention.
+                If you have any urgent concerns or require immediate assistance, please
+                don't hesitate to contact our front desk or residence management team. We're here to help!
+                <br><span>Thank you for your patience and cooperation.</span> 
+            </p>
+        </div>
+    </div>
+</body>
+</html>

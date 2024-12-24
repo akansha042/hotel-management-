@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Management</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+<header >  
+    <div class="logo">
+        <img src="logo.png">
+    </div>
+    <div class="menu">
+        <ul class="menu-items">
+            <li>
+                <a href="#" class="active">HOME</a>
+                <a href="#services">SERVICES</a>
+                <a href="#Book_now">BOOK NOW</a>
+                <a href="#reviews">REVIEWS</a>
+                <a href="#aboutus">ABOUT US</a>
+                <a href="#contactus">CONTACT US</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="heading">
+    <h3>TULIP GIRLS' HOSTEL</h3>
+</div>
+<h1 class="dynamic-txt">
+    <a href="" class="typewrite" data-period="2000" data-type='[ "Where comfort meets camaraderie!", "Your home away from home on a budget!",
+     "Affordable stays, unforgettable experiences!" ]'>
+      <span class="wrap"></span>
+    </a>
+  </h1>
+<div class="buttons">
+    <ul>
+        <li>
+            <button class="btn" id="loginbtn">Log In</button>
+            <button class="btn2" id="createAcc">Create Account</button>
+            <button class="btn3" id="Complaint">Complaint</button>
+        </li>
+    </ul>
+
+</div>
+<script src="script.js"></script>
+
+<!--HOme page ends here -->
+<!--Services page starts here-->
+<div class="services" id="services">   
+    <img class="img1" src="hostel.jpeg">
+    <img class="img2" src="white.jpeg">
+    <h1>What <br>do we<br> Provide?</h1>
+    <img class="img3" src="facility.jpg">
+    <h3>FEATURES AND FACILITIES</h3>
+    <div class="contain">
+        <div class="slide">
+            <h4>DELICIOUS FOOD</h4>
+            <p>Start your day off right with our complimentary continental breakfast,
+                 served fresh every morning. Enjoy a selection of pastries, cereals, 
+                 fresh fruit, yogurt, and hot beverages to fuel your adventures</p>
+                
+                <button class="food-services" onclick="food_services()">FOOD SERVICES</button>
+        </div>
+    </div>
+    <div class="contain1">
+        <div class="slide1">
+            <h4>MIND-BLOWING SERVICES</h4>
+            <p> Beyond providing comfortable accommodation, our hostel goes the extra mile to ensure that your stay is 
+                enjoyable and hassle-free. From essential amenities to thoughtful services, we strive to meet your
+                 day-to-day needs and enhance your overall experience.</p>
+                 
+                <button class="Other_services" onclick="other_services()">OTHER SERVICES</button>
+        </div>
+    </div>
+   
+      
+</div>
+<!--services page ends here -->
+
+<!--Contact us page starts here -->
+    <div class="contactus" id="contactus">
+       
+        <img class="contimg" src="contactusbg.jpg">
+    </div>
+           
+            <div class="textc">
+            <h3> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Reach out to us</h3>
+            <p>&#x1F3E0;  <b>Address:</b> B3, Tulip Girls' Hostel,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;Bldg. No. A-1,Sector -1
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;Near Ashok Vihar,Bengluru </p>
+            <p> &#x1F4E7; <b>E-mail:</b> support@TulipHostel11.com</p>
+            <p>&#x1F4DE; <b>Phone:</b> 1800-572-111111</p>
+        </div>
+        <div class="contactform" >
+            <form action="connect.php" method="POST" onsubmit="return validateForm()">
+               
+                    <label for="name">Name:*</label><br>
+                    <input type="text" id="name" name="name" required>
+                    <br><br>
+                    <label for="email">Email:*</label><br>
+                    <input type="text" id="email" name="email" required>
+                    <br><br>
+                    <label for="message">Message:*</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                    <input type="submit" value="SUBMIT">
+        </form>
+    </div>
+<!--Contact us page ends here-->
+
+<!--About us page starts here-->
+    <div class="aboutus" id="aboutus">
+        <img class="bgim" src="abbg.jpg">
+      
+        <h2><b>Welcome to TULIP GIRLS' HOSTEL</b></h2>
+        <h4>where comfort meets affordability and community thrives.</h4> 
+        <h5>Our Vision</h5>
+        <img class="vision" src="vision.avif">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Established with a vision to redefine hostel living, we pride ourselves on offering <br>more than just a
+         place to stay; we provide an experience that fosters connections, culti-<br>vates friendships, and creates 
+         memories that last a lifetime.<br>
+         Our facilities are designed with your comfort and conveniencein mind. From cozy do-<br>rmitories equipped with 
+            modern amenities to vibrant common areas where you can <br>unwind and socialize, we strive to make your stay as
+            enjoyable as possible.<br>
+        So whether you're embarking on a solo adventure, seeking new experiences with frie-<br>nds, or simply passing
+             through on your travels, we invite you to make TULIP your<br> home away from home. <br>Join us, and become 
+             part of our ever-growing family of global explorers.</p>
+            <h3><b>We look forward to welcoming you soon!</b></h3>
+    </div>
+    <!--About us page ends here -->
+    <!--Book now page starts here-->
+    <section id="Book_now">
+        <div class="Book_now" >
+            <h1>Book Your Slot Today!!</h1>
+            <h3>Book Now!!!</h3>
+            <h2>Book Now!!!</h2>
+            <img class="bbbkimg" src="book_now.png">
+            <form action="connect2.php" method="POST">
+                <label for="Name">Your name :</label>
+                <input type="text" id="name" name="Y_name"><br><br>
+                <label for="Name">Your Email :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="email" id="mail" name="mail"><br><br>
+                <label for="Name">Your Contact :&nbsp;&nbsp;</label>
+                <input type="number" id="num" name="num"><br><br>
+                <label for="Name">Your Age :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>&nbsp;
+                <input type="number" id="age" name="age">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="Name">Date of arrival :</label>
+                <input type="date" id="doa" name="DOA"><br><br>
+                <label for="Room" >Select your room type :</label>
+                <select id="room" name="room" >
+                    <option value="     ">Select</option>
+                  <option value="2-sharing">2-sharing</option>
+                  <option value="3-sharing">3-sharing</option>
+                  <option value="4-sharing">4-sharing</option>
+                  <option value="single">single</option>
+                </select><br>
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </section>
+    <!--Book page ends here-->
+    
+        <!--Reviews page starts here-->
+        <div class="reviews" id="reviews">
+                <img src="reviews.jpg">
+                <h1 class="heading">Customers'&nbsp;&nbsp;<span> REVIEWS</span></h3>
+                    <div class="container">
+                        <div class="box">
+                         
+                            <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            <p>"I recently stayed at TULIP HOSTEL and had an amazing experience! The staff were incredibly friendly and helpful, 
+                                the facilities were clean and well-maintained, and the atmosphere was vibrant and welcoming. I particularly enjoyed 
+                                the communal areas where I got to meet fellow travelers and exchange stories. Overall, it was
+                                 a fantastic stay and I would highly recommend TULIP HOSTEL to anyone looking for affordable accommodation with a
+                                  great atmosphere."</p>
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <div class="box2">
+            
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <p>"My stay at [Hostel Name] exceeded all expectations. From the moment I arrived, I felt at home thanks to the warm welcome
+                                 from the staff. The dorm rooms were spacious and comfortable, with sturdy bunk beds and individual lockers for security.
+                                  The common areas were perfect for socializing, whether it was cooking in the shared kitchen or relaxing in the cozy lounge.
+                                   The location was also ideal, with easy access to public transportation and plenty of nearby attractions. I wouldn't hesitate
+                                    to stay at [Hostel Name] again in the future."</p>
+                        </div></div>
+                        <div class="container3">
+                            <div class="box3">
+                               
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <p>"I recently stayed at TULIP HOSTEL and had an amazing experience! The staff were incredibly friendly and helpful, 
+                                    the facilities were clean and well-maintained, and the atmosphere was vibrant and welcoming. I particularly enjoyed 
+                                    the communal areas where I got to meet fellow travelers and exchange stories. Overall, it was
+                                     a fantastic stay and I would highly recommend TULIP HOSTEL to anyone looking for affordable accommodation with a
+                                      great atmosphere."</p>
+                            </div></div>
+                    </div>
+        </div>
+        <!--Reviews page ends here-->
+    <!--Login form starts here-->
+    <!--div class="LoginForm" id="LoginForm">
+        <form name="frmContact" method="post" action="contact.php">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+    
+            <input type="submit" value="Login">
+        </form></div-->
+    <!--Login in form ends here-->
+    <!--Footer starts here-->
+        <footer class="footer-distributed">
+            <div class="footer-left">
+                <img src="logo.png">
+              <h3>TulipGIRLS'<span>Hostel</span></h3>
+               <p class="footer-links">
+                   <a href="index.html">HOME</a>
+                   |
+                   <a href="#">BLOG</a>
+                   |
+                   <a href="#aboutus">ABOUT</a>
+                   |
+                   <a href="#contactus">CONTACT</a>
+               </p>
+               <p class="footer-company-name">@copyright:TulipgirlsHostel Pvt. Ltd.</p>
+               </div>
+               <div class="footer-center">
+                   <div>
+                       <i class="fa-fa-marker"></i>
+                       <p><span><b>B3, Tulip Girls' Hostel,
+                           Bldg. No. A-1,Sector -16</b></span>
+                           Near Dwarka, Delhi, India </p>
+                   </div>
+                   <div>
+                       <i class="fa-fa-phone"></i>
+                       <p>+91 22-27782199</p>
+                   </div>
+                   <div>
+                       <i class="fa-fa-envelope"></i>
+                       <p><a href="mailto:Rajasthantourism99@gmail.com">support@TulipHostel111@gmail.com</a></p>
+                   </div>
+               </div>
+               <div class="footer-right">
+                   <p class="footer-company-about">
+                   <span>About the Company</span>
+                 We offer facilities that are designed with your comfort and convenience in mind. From cozy dormitories equipped with 
+                   modern amenities to vibrant common areas where you can unwind and socialize, we strive to make your stay as
+                   enjoyable as possible.<br><br></p>
+                   <div class="footer-icons">
+                       <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+
+                   </div>
+               </div>
+        </footer>
+    
+    <!--Footer ends here-->
+   
+</body>
+
+</html>

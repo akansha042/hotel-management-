@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <style>
+        body{
+        
+            background-image: url(logbg.jpeg);
+            width: 1535px;
+            height: 700px;
+            background-size: cover;
+            
+        }
+        .login h3{
+            font-size: 50px;
+            position: absolute;
+            top: 50px;
+            color: #ffffff;
+            left: 250px;
+        }
+        .login form{
+            position: absolute;
+            top: 200px;
+            left: 500px;
+            border-radius: 3%;
+            margin: 10px;
+            padding: 20px;
+            width: 600px;
+    
+        }
+        .login form label{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+input[type=text]{
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: #000000;
+  }
+  input[type=submit]{
+    border-radius: 4px;
+    background-color: #ffffff;
+    width: 100px;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+  }
+  input[type=submit]:hover{
+    background-color: #7e7371;
+    border-radius: 4px;
+    border: 2px solid black;
+  }
+  .login h2 {
+    position: absolute;
+    top: 550px;
+    left: 540px;
+    color: #ffffff;
+  }
+  .login h2 a{
+    color: #ffffff;
+  }
+    </style>
+</head>
+<body>
+    <div class="login">
+    <h3>Login Here</h3>
+    <form action="#" method="post">
+        <label for="Uname">Username :</label><br>
+        <input type="text" id="username" name="username" required>
+        <br><br><br>
+        <label for="Uname">Password :</label><br>
+        <input type="text" id="username" name="username" required>
+        <br><br><br>
+        <input type="submit" value="Login">
+    </form>
+    <h2>Don't have an account?<a href="CreateAcc.html">Create One</a></h2>
+</div>
+</body>
+</html>
